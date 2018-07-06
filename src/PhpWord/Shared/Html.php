@@ -144,6 +144,7 @@ class Html
             'em'        => array('Property',    null,   null,       $styles,    null,   'italic',       true),
             'i'         => array('Property',    null,   null,       $styles,    null,   'italic',       true),
             'u'         => array('Property',    null,   null,       $styles,    null,   'underline',    'single'),
+            's'         => array('Property',    null,   null,       $styles,    null,   'strikethrough', true),
             'sup'       => array('Property',    null,   null,       $styles,    null,   'superScript',  true),
             'sub'       => array('Property',    null,   null,       $styles,    null,   'subScript',    true),
             'span'      => array('Span',        $node,  null,       $styles,    null,   null,           null),
