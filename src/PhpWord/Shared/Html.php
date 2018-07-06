@@ -479,6 +479,7 @@ class Html
     {
         $cNodes = $node->childNodes;
         if (!empty($cNodes)) {
+            $styles['paragraph'] = self::parseInlineStyle($node, $styles['paragraph']);
             $listRun = $element->addListItemRun($data['listdepth'], $styles['list'], $styles['paragraph']);
             foreach ($cNodes as $cNode) {
                 self::parseNode($cNode, $listRun, $styles, $data);
