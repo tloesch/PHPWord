@@ -651,6 +651,10 @@ class Html
                                         $style['overlap'] = true;
                                     }
                                     break;
+                                case "width":
+                                case "height":
+                                    $style[$k] = (int)str_replace("px", "", $v);
+                                    break;
                             }
                         }
                     }
